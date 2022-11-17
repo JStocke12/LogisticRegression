@@ -27,6 +27,12 @@ def main():
 
     plt.plot(line_xs, clf.predict_proba(line_xs.reshape((-1, 1)))[:,1])
 
+    plt.title("Probabilistic model of Penguin Sex")
+    plt.xlabel("Body Mass (Grams)")
+    plt.ylabel("Sex (Male-1, Female-0)")
+
+    plt.savefig("plot.png")
+
     plt.show()
 
 
